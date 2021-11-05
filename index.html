@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Your description">
+    <meta name="author" content="Your name">
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
+	<meta property="og:site_name" content="" /> <!-- website name -->
+	<meta property="og:site" content="" /> <!-- website link -->
+	<meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
+	<meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+	<meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+	<meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
+    
+    <script src ="https://www.gstatic.com/firebasejs/9.2.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.2.0/firebase-auth.js"></script>
+
+    <!-- Webpage Title -->
+    <title>Analytic school</title>
+    
+    <!-- Styles -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/fontawesome-all.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+    
+ 
+
+    <style>
+        #blink{
+            font-size: 30px;
+            font-weight: bold;
+            text-decoration: #b91b1b;
+            transition: 1.5s;
+        }
+        </style>
+	
+	<!-- Favicon  -->
+    <link rel="icon" href="images/Analytic-1.png">
+</head>
+<body data-spy="scroll" data-target=".fixed-top">
+    
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand bg-success fixed-top navbar-dark">
+        <div class="container">
+            
+            <!-- Image Logo -->
+            <a class="navbar-brand logo-image" href="index.html"><img src="images/Analytic-3.png" alt="alternative"></a>  
+
+            <!-- Text Logo - Use this if you don't have a graphic logo -->
+            <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Mark</a> -->
+
+            <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#header">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#about">Our Insights</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#services">What do we do?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="file:///C:/Users/my/Downloads/website/web/about.html">Contact</a>
+                    </li>
+                    
+            
+                    <li class="nav-item" id="blink" >
+                        <a class="nav-link page-scroll" href="#hive">Hive</a>
+                    
+                    <script type="text/javascript">
+                    var blink = document.getElementById('blink');
+                    setInterval(function() {
+                        blink.style.opacity = (blink.style.opacity == 0 ? 1 : 0);
+                    }, 1500);
+                    </script>
+                    </li>
+                    <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Drop</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown01">
+                            <a class="dropdown-item page-scroll" href="project.html">Project Details</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item page-scroll" href="terms.html">Terms Conditions</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item page-scroll" href="privacy.html">Privacy Policy</a>
+                        </div>
+                    </li> -->
+                   
+                 </ul> 
+                <!-- <span class="nav-item social-icons">
+                    <span class="fa-stack">
+                        <a href="#your-link">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-facebook-f fa-stack-1x"></i>
+                        </a>
+                    </span>
+                    <span class="fa-stack">
+                        <a href="#your-link">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-twitter fa-stack-1x"></i>
+                        </a>
+                    </span> -->
+                </span>
+            </div> <!-- end of navbar-collapse -->
+        </div> <!-- end of container -->
+    </nav> <!-- end of navbar -->
+    <!-- end of navigation -->
+
+
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="container">
+            <div class="row">
+                <!-- <div class="col-lg-6"> -->
+                    <div class="text-container">
+                        <div>
+                        <h1 class="h1-large">DISCOVER</h1>
+                        </div>
+                        <h1 class="h1-large"> WHO WE ARE & JOIN US!!. </h1>
+                        <P class="h2-large">Ready to innovate and make impact in education. Analytic School offers unparalleled education platform. A commitment to inclusion and supportive educational environment, in which students can develop to reach their full potential from stage of education to employement.</P>
+                        <!-- <a class="btn-solid-lg page-scroll" href="#about">Discover</a> -->
+                        <a class="btn-outline-lg page-scroll" href="#contact"><i class="fas fa-user"></i>Contact Me</a>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </header> <!-- end of header -->
+    <!-- end of header -->
+
+
+    <!-- About-->
+    <!-- <header id="about" class="header"> -->
+    <!-- <div id="about" class="ex-basic-1 pt-5 pb-5"> -->
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-10 offset-xl-1">
+                    <div class="text-box mt-5 mb-5">
+                        <p class="p-large">The app also automatically collects and receives certain information from your computer or mobile device, including the activities you perform on our Website, the Platforms, and the Applications, the type of hardware and software you are using (for example, your operating system or browser).</p>
+                    </div> <!-- end of text-box -->
+
+                    <h2 class="mb-3">1. Each time you visit the website or services</h2>
+                    <p>For example, each time you visit the Website or otherwise use the Services, we automatically collect your IP address, browser and device type, access times, the web page from which you came, the regions from which you navigate the web page , and the web page(s) you access. When you first register for a Leon account.</p>
+                    <p class="mb-5">Under no circumstances shall Leon be liable for any direct, indirect, special, incidental or consequential damages, including, but not limited to, loss of data or profit, arising out of the use, or the inability to use, the materials on this site, even if Leon or an authorized representative has been advised of the possibility of such damages.</p>
+
+                    <h2 class="mb-3">2. If your use of materials from this site</h2>
+                    <p>If your use of materials from this site results in the need for servicing, repair or correction of equipment or data, you assume any costs thereof should only be provided by the user of the application. Under no circumstances shall Leon be liable for any direct, indirect, special, incidental or consequential damages.</p>
+                    <p class="mb-4">All our templates inherit the GNU general public license from HTML. All .PSD & CSS files are packaged separately and are not licensed under the GPL 2.0. Instead, these files inherit Leon Personal Use License. These files are given to all Clients on a personal use basis. You may not offer them or use high quality support.</p>
+                    <ul class="list-unstyled li-space-lg mb-4">
+                        <li class="media">
+                            <i class="fas fa-square"></i>
+                            <div class="media-body"><strong>Modified or unmodified</strong> for redistribution or resale of any kind. You can’t use one of our themes on a HTML domain. More on HTML Vs CSS, you can read here where all the users gather to download</div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-square"></i>
+                            <div class="media-body"><strong>You can use our templates</strong>  do develop sites for your clients and also for a limited amount our templates inherit the GNU general public license from HTML but no more than one project per click view</div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-square"></i>
+                            <div class="media-body"><strong>For redistribution or resale</strong> of any kind. You can’t use one of our themes on a HTML domain. More on HTML Vs CSS, you can read here. You can use our templates do develop these types of situations</div>
+                        </li>
+                    </ul>
+                    <p class="mb-5">Services help our customers promote their products and services, marketing and advertising; engaging audiences; scheduling and publishing messages; and analyze the results are always measured better with a dedicated analytics tool You can use our templates do develop sites for your clients and also for small fee.</p>
+
+                    <h2 class="mb-3">3. Designer membership and how it applies</h2>
+                    <p class="mb-5">By using any of the Services, or submitting or collecting any Personal Information via the Services, you consent to the collection, transfer, storage disclosure, and use of your Personal Information in the manner set out in this Privacy Policy. If you do not consent to the use of your Personal Information.</p>
+                    <h3>3.1. In these ways please stop using the services</h3>
+                    <p class="mb-5">Leon Landing Page uses tracking technology on the landing page, in the Applications, and in the Platforms, including mobile application identifiers and a unique Hootsuite user ID to help us recognize you across different Services, to monitor usage and web traffic routing for the Services, and to customize.</p>
+                    <h3>3.2. By visiting the app or using the services you agree</h3>
+                    <p class="mb-4">For example, each time you visit the Website or otherwise use the Services, we automatically collect your IP address, browser and device type, access times, the web page from which you came, the regions from which you navigate the web page , and the web page(s) you access. When you first register for a Leon account.</p>
+                    <ul class="list-unstyled li-space-lg mb-5">
+                        <li class="media">
+                            <i class="fas fa-square"></i>
+                            <div class="media-body"><strong>Cookies are small</strong> text files placed on your device when you visit a website or use the service</div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-square"></i>
+                            <div class="media-body"><strong>All templates</strong> in the roundup are premium which means you need to pay for them but we're talking</div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-square"></i>
+                            <div class="media-body"><strong>Will help authors </strong> make a living. In return you get a high quality, updated item together</div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-square"></i>
+                            <div class="media-body"><strong>Besides buying</strong> the template you need some basic web skills in order to customize it nothing</div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-square"></i>
+                            <div class="media-body"><strong>You can always</strong> hire a web designer to help with the customization work while you provide</div>
+                        </li>
+                    </ul>
+                    
+                    <h2 class="mb-3">4. This is a landing page HTML template</h2>
+                    <p class="mb-4">Help you showcase your mobile app online and persuade visitors to download it from the app stores. The author used Bootstrap to build the template and integrated a nice animated navigation that slides from outside the screen. Features include an eye catching morphtext in the header, details lightbox and other features.</p>
+                    <ul class="list-unstyled li-space-lg mb-5">
+                        <li class="media">
+                            <strong>1.</strong>
+                            <div class="media-body"><strong>Details lightbox</strong> for more details information, statistics numbers for important values, card slider for testimonials, image slider for customer logos and working forms positioned in the right place</div>
+                        </li>
+                        <li class="media">
+                            <strong>2.</strong>
+                            <div class="media-body"><strong>Some useful extra</strong> pages are bundled with the template lik article details, terms conditions and privacy policy which can be customized as per your requirements and other user needs manifested in emails</div>
+                        </li>
+                        <li class="media">
+                            <strong>3.</strong>
+                            <div class="media-body"><strong>The app has an impactful</strong> dark style design combined with warm colors and angular background shapes with the unique goal of making your mobile app stand out from the crowd needs to see this app</div>
+                        </li>
+                        <li class="media">
+                            <strong>4.</strong>
+                            <div class="media-body"><strong>Item is an easy</strong> to customize landing page HTML template built with Bootstrap for promoting mobile apps to the online audience and making visitors download them from app stores built by the media companies</div>
+                        </li>
+                        <li class="media">
+                            <strong>5.</strong>
+                            <div class="media-body"><strong>This template</strong> is built with HTML, CSS and Bootstrap to ensure the highest flexibility for all users. All designers, developers and tech-savvy people will be able to customize and modify all required aspects</div>
+                        </li>
+                    </ul>
+                    
+                    <div class="text-box mb-5">
+                        <h3>Among the features you will find details lightbox</h3>
+                        <p>For more details information, tabbed content for feature details, video lightbox, card slider for testimonials, statistics numbers for important values, image slider for customer logos, dropdown navigation and useful extra pages for article details, terms conditions and privacy policy light design. Build an engaging online presentation for your mobile app and convince visitors to return.</p>
+                    </div> <!-- end of text-box -->
+                    <p class="mb-5">Together with touches of call to action green, the overall landing page design will showcase your app beautifully and will help with convincing visitors to download it from the app stores orange and gray hues with one color backgrounds to maximize the impact of your written and online content.</p>
+                    
+                    <!-- <a class="btn-solid-reg mb-5" href="index.html">Back</a> -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of ex-basic-1 -->
+<!-- </header> -->
+    
+
+    <!-- Services -->
+    <!-- <header id="services" class="header"> -->
+    <div id="services" class="ex-basic-1 pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-10 offset-xl-1">
+                    <div class="text-box mt-5 mb-5">
+                        <p class="p-large">The app also automatically collects and receives certain information from your computer or mobile device, including the activities you perform on our Website, the Platforms, and the Applications, the type of hardware and software you are using (for example, your operating system or browser).</p>
+                    </div> <!-- end of text-box -->
+
+                    <h2 class="mb-3">1. Each time you visit the website or services</h2>
+                    <p>For example, each time you visit the Website or otherwise use the Services, we automatically collect your IP address, browser and device type, access times, the web page from which you came, the regions from which you navigate the web page , and the web page(s) you access. When you first register for a Leon account.</p>
+                    <p class="mb-5">Under no circumstances shall Leon be liable for any direct, indirect, special, incidental or consequential damages, including, but not limited to, loss of data or profit, arising out of the use, or the inability to use, the materials on this site, even if Leon or an authorized representative has been advised of the possibility of such damages.</p>
+
+                    <h2 class="mb-3">2. If your use of materials from this site</h2>
+                    <p>If your use of materials from this site results in the need for servicing, repair or correction of equipment or data, you assume any costs thereof should only be provided by the user of the application. Under no circumstances shall Leon be liable for any direct, indirect, special, incidental or consequential damages.</p>
+                    <p class="mb-4">All our templates inherit the GNU general public license from HTML. All .PSD & CSS files are packaged separately and are not licensed under the GPL 2.0. Instead, these files inherit Leon Personal Use License. These files are given to all Clients on a personal use basis. You may not offer them or use high quality support.</p>
+                    <ul class="list-unstyled li-space-lg mb-4">
+                        <li class="media">
+                            <i class="fas fa-square"></i>
+                            <div class="media-body"><strong>Modified or unmodified</strong> for redistribution or resale of any kind. You can’t use one of our themes on a HTML domain. More on HTML Vs CSS, you can read here where all the users gather to download</div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-square"></i>
+                            <div class="media-body"><strong>You can use our templates</strong>  do develop sites for your clients and also for a limited amount our templates inherit the GNU general public license from HTML but no more than one project per click view</div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-square"></i>
+                            <div class="media-body"><strong>For redistribution or resale</strong> of any kind. You can’t use one of our themes on a HTML domain. More on HTML Vs CSS, you can read here. You can use our templates do develop these types of situations</div>
+                        </li>
+                    </ul>
+                    <p class="mb-5">Services help our customers promote their products and services, marketing and advertising; engaging audiences; scheduling and publishing messages; and analyze the results are always measured better with a dedicated analytics tool You can use our templates do develop sites for your clients and also for small fee.</p>
+
+                    <h2 class="mb-3">3. Designer membership and how it applies</h2>
+                    <p class="mb-5">By using any of the Services, or submitting or collecting any Personal Information via the Services, you consent to the collection, transfer, storage disclosure, and use of your Personal Information in the manner set out in this Privacy Policy. If you do not consent to the use of your Personal Information.</p>
+                    <h3>3.1. In these ways please stop using the services</h3>
+                    <p class="mb-5">Leon Landing Page uses tracking technology on the landing page, in the Applications, and in the Platforms, including mobile application identifiers and a unique Hootsuite user ID to help us recognize you across different Services, to monitor usage and web traffic routing for the Services, and to customize.</p>
+                    <h3>3.2. By visiting the app or using the services you agree</h3>
+                    <p class="mb-4">For example, each time you visit the Website or otherwise use the Services, we automatically collect your IP address, browser and device type, access times, the web page from which you came, the regions from which you navigate the web page , and the web page(s) you access. When you first register for a Leon account.</p>
+                    <ul class="list-unstyled li-space-lg mb-5">
+                        <li class="media">
+                            <i class="fas fa-square"></i>
+                            <div class="media-body"><strong>Cookies are small</strong> text files placed on your device when you visit a website or use the service</div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-square"></i>
+                            <div class="media-body"><strong>All templates</strong> in the roundup are premium which means you need to pay for them but we're talking</div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-square"></i>
+                            <div class="media-body"><strong>Will help authors </strong> make a living. In return you get a high quality, updated item together</div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-square"></i>
+                            <div class="media-body"><strong>Besides buying</strong> the template you need some basic web skills in order to customize it nothing</div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-square"></i>
+                            <div class="media-body"><strong>You can always</strong> hire a web designer to help with the customization work while you provide</div>
+                        </li>
+                    </ul>
+                    
+                    <h2 class="mb-3">4. This is a landing page HTML template</h2>
+                    <p class="mb-4">Help you showcase your mobile app online and persuade visitors to download it from the app stores. The author used Bootstrap to build the template and integrated a nice animated navigation that slides from outside the screen. Features include an eye catching morphtext in the header, details lightbox and other features.</p>
+                    <ul class="list-unstyled li-space-lg mb-5">
+                        <li class="media">
+                            <strong>1.</strong>
+                            <div class="media-body"><strong>Details lightbox</strong> for more details information, statistics numbers for important values, card slider for testimonials, image slider for customer logos and working forms positioned in the right place</div>
+                        </li>
+                        <li class="media">
+                            <strong>2.</strong>
+                            <div class="media-body"><strong>Some useful extra</strong> pages are bundled with the template lik article details, terms conditions and privacy policy which can be customized as per your requirements and other user needs manifested in emails</div>
+                        </li>
+                        <li class="media">
+                            <strong>3.</strong>
+                            <div class="media-body"><strong>The app has an impactful</strong> dark style design combined with warm colors and angular background shapes with the unique goal of making your mobile app stand out from the crowd needs to see this app</div>
+                        </li>
+                        <li class="media">
+                            <strong>4.</strong>
+                            <div class="media-body"><strong>Item is an easy</strong> to customize landing page HTML template built with Bootstrap for promoting mobile apps to the online audience and making visitors download them from app stores built by the media companies</div>
+                        </li>
+                        <li class="media">
+                            <strong>5.</strong>
+                            <div class="media-body"><strong>This template</strong> is built with HTML, CSS and Bootstrap to ensure the highest flexibility for all users. All designers, developers and tech-savvy people will be able to customize and modify all required aspects</div>
+                        </li>
+                    </ul>
+                    
+                    <div class="text-box mb-5">
+                        <!-- <h3>Among the features you will find details lightbox</h3>
+                        <p>For more details information, tabbed content for feature details, video lightbox, card slider for testimonials, statistics numbers for important values, image slider for customer logos, dropdown navigation and useful extra pages for article details, terms conditions and privacy policy light design. Build an engaging online presentation for your mobile app and convince visitors to return.</p>
+                    </div> end of text-box -->
+                    <!-- <p class="mb-5">Together with touches of call to action green, the overall landing page design will showcase your app beautifully and will help with convincing visitors to download it from the app stores orange and gray hues with one color backgrounds to maximize the impact of your written and online content.</p> -->
+                    
+                    <!-- <a class="btn-solid-reg mb-5" href="index.html">Back</a> -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of ex-basic-1 -->
+    
+
+    <!-- Details -->
+	<!-- <div class="split">
+		<div class="area-1">
+		</div><!-- end of area-1 on same line and no space between comments to eliminate margin white space --><div class="area-2 bg-gray">
+            <!-- <div class="container">    
+                <div class="row">
+                    <div class="col-lg-12">     
+                         -->
+                        <!-- Text Container -->
+                        <!-- <div class="text-container">
+                            <h2>Why Work With Me</h2>
+                            <p>I am a great communicator and love to invest the necessary time to understand the customer's problem very well</p>
+                            <h5>DESIGN TOOLS</h5>
+                            <p>My favorite design tools are Photoshop and Illustrator but I can create designs in Figma, Sketch and Adobe XD too</p>
+                            <h5>DEVELOPMENT SKILLS</h5>
+                            <p>I am familiar and work on a daily basis with HTML, CSS, JavaScript, Bootstrap and other modern frameworks</p>
+                             --> 
+                            <!-- <div class="icons-container">
+                                <img src="images/details-icon-photoshop.png" alt="alternative">
+                                <img src="images/details-icon-illustrator.png" alt="alternative">
+                                <img src="images/details-icon-html.png" alt="alternative">
+                                <img src="images/details-icon-css.png" alt="alternative">
+                                <img src="images/details-icon-bootstrap.png" alt="alternative">
+                                <img src="images/details-icon-javascript.png" alt="alternative">
+                            </div> end of icons-container -->
+                        <!-- </div> end of text-container -->
+                        <!-- end of text container -->
+
+                    <!-- </div> end of col -->
+                <!-- </div> end of row -->
+            <!-- </div> end of container -->
+		<!-- </div> end of area-2 -->
+    <!-- </div> end of split -->
+    <!-- end of details -->
+
+
+    <!-- Projects -->
+    <!-- <div id="projects" class="basic-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="h2-heading">Delivered projects</h2>
+                    <p class="p-heading">Listed below are some of the most representative projects I've worked on. They range from basic web design for presentation sites to advanced web development for online shops</p>
+                </div> end of col -->
+            <!-- </div> end of row -->
+            <!-- <div class="row">
+                <div class="col-lg-12">
+                    <div class="text-container">
+                        <div class="image-container">
+                            <!-- <a href="project.html"> -->
+                                <!-- <img class="img-fluid" src="images/project-1.jpg" alt="alternative"> -->
+                            <!-- </a> --> 
+                        <!-- </div> end of image-container -->
+                        <!-- <p><strong>For:</strong> Jumbotron, <strong>Project:</strong> web design for their corporate websites and landing pages for marketing campaigns <a class="blue" href="project.html">details</a></p> -->
+                    <!-- </div> end of text-container -->
+                    <!-- <div class="text-container">
+                        <div class="image-container">
+                            <!-- <a href="project.html"> -->
+                                <!-- <img class="img-fluid" src="images/project-2.jpg" alt="alternative"> -->
+                            <!-- </a> --> 
+                        <!-- </div> end of image-container -->
+                        <!-- <p><strong>For:</strong> Carsrepo, <strong>Project:</strong> designed and developed modern platform for purchasing second hand cars online <a class="blue" href="project.html">details</a></p> -->
+                    <!-- </div> end of text-container -->
+                    <!-- <div class="text-container">
+                        <div class="image-container"> -->
+                            <!-- <a href="project.html">
+                                <img class="img-fluid" src="images/project-3.jpg" alt="alternative">
+                            </a> -->
+                        <!-- </div> end of image-container -->
+                        <!-- <p><strong>For:</strong> Truevideo, <strong>Project:</strong> created a custom video editing and upload web app for this awesome team <a class="blue" href="project.html">details</a></p> -->
+                    <!-- </div> end of text-container -->
+                    <!-- <div class="text-container">
+                        <div class="image-container">
+                            <!-- <a href="project.html"> -->
+                                <!-- <img class="img-fluid" src="images/project-4.jpg" alt="alternative"> -->
+                            <!-- </a> -->
+                        <!-- </div> end of image-container -->
+                        <!-- <p><strong>For:</strong> Evolosim, <strong>Project:</strong> complete redesign of their corporate website and platform update for their online shop <a class="blue" href="project.html">details</a></p> -->
+                    <!-- </div> end of text-container -->
+                <!-- </div> end of col -->
+            <!-- </div> end of row -->
+        <!-- </div> end of container -->
+    <!-- s end of basic-3 -->
+    <!-- end of projects -->
+
+
+    <!-- Works -->
+    <!-- <div class="basic-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="text-container">
+                        <div class="image-container">
+                            <!-- <a href="project.html"> -->
+                                <!-- <img class="img-fluid" src="images/work-1.jpg" alt="alternative"> -->
+                            <!-- </a> --> 
+                        <!-- </div> end of image-container -->
+                        <!-- <p><strong>For:</strong> Zigoland, <strong>Project:</strong> started a new website from ground up for a new product <a class="blue" href="project.html">details</a></p> -->
+                    <!-- </div> end of text-container -->
+                <!-- </div> end of col -->
+                <!-- <div class="col-lg-4">
+                    <div class="text-container">
+                        <div class="image-container">
+                            <!-- <a href="project.html"> -->
+                                <!-- <img class="img-fluid" src="images/work-2.jpg" alt="alternative"> -->
+                            <!-- </a> --> 
+                        <!-- </div> end of image-container -->
+                        <!-- <p><strong>For:</strong> Visodream, <strong>Project:</strong> developed a new forum for the Visodream community <a class="blue" href="project.html">details</a></p> -->
+                    <!-- </div> end of text-container -->
+                <!-- </div> end of col -->
+                <!-- <div class="col-lg-4">
+                    <div class="text-container">
+                        <div class="image-container">
+                            <!-- <a href="project.html"> -->
+                                <!-- <img class="img-fluid" src="images/work-3.jpg" alt="alternative"> -->
+                            <!-- </a> --> 
+                        <!-- </div> end of image-container -->
+                        <!-- <p><strong>For:</strong> Primoday, <strong>Project:</strong> complete redesign of their corporate website and platform <a class="blue" href="project.html">details</a></p> -->
+                    <!-- </div> end of text-container -->
+                <!-- </div> end of col -->
+            <!-- </div> end of row -->
+            <!-- <div class="row">
+                <div class="col-lg-4">
+                    <div class="text-container">
+                        <div class="image-container">
+                            <!-- <a href="project.html"> -->
+                                <!-- <img class="img-fluid" src="images/work-4.jpg" alt="alternative"> -->
+                            <!-- </a> --> 
+                        <!-- </div> end of image-container -->
+                        <!-- <p><strong>For:</strong> Nextlite, <strong>Project:</strong> created a custom video editing and upload web app <a class="blue" href="project.html">details</a></p> -->
+                    <!-- </div> end of text-container -->
+                <!-- </div> end of col -->
+                <!-- <div class="col-lg-4">
+                    <div class="text-container">
+                        <div class="image-container">
+                            <!-- <a href="project.html"> -->
+                                <!-- <img class="img-fluid" src="images/work-5.jpg" alt="alternative"> -->
+                            <!-- </a> --> 
+                        <!-- </div> end of image-container -->
+                        <!-- <p><strong>For:</strong> Syncnow, <strong>Project:</strong> web design for their corporate websites and landing pages <a class="blue" href="project.html">details</a></p> -->
+                    <!-- </div> end of text-container -->
+                <!-- </div> end of col -->
+                <!-- <div class="col-lg-4">
+                    <div class="text-container">
+                        <div class="image-container">
+                            <a href="project.html">
+                                <img class="img-fluid" src="images/work-6.jpg" alt="alternative">
+                            </a> -->
+                        <!-- </div> end of image-container -->
+                        <!-- <p><strong>For:</strong> Shifter, <strong>Project:</strong> started a new website from ground up for a new product <a class="blue" href="project.html">details</a></p> -->
+                    <!-- </div> end of text-container -->
+                <!-- </div> end of col -->
+            <!-- </div> end of row -->
+        <!-- </div> end of container -->
+    <!-- </div> end of basic-4 -->
+    <!-- end of works -->
+
+
+    <!-- Testimonials -->
+    <!-- <div class="cards-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="h2-heading">A few words from people that chose to work with me</h2> -->
+                <!-- </div> end of col -->
+            <!-- </div> end of row -->
+            <!-- <div class="row">
+                <div class="col-lg-12">
+                     -->
+                    <!-- Card -->
+                    <!-- <div class="card">
+                        <div class="card-body">
+                            <p class="testimonial-text">“Mark is a skilled developer which will do everything possible to deliver the project on time and I really appreciate that”</p>
+                            <div class="details">
+                                <img src="images/testimonial-1.jpg" alt="alternative">
+                                <div class="text">
+                                    <div class="testimonial-author">Samantha Bloom</div>
+                                    <div class="occupation">Team Leader - Syncnow</div> -->
+                                <!-- </div> end of text -->
+                            <!-- </div> end of testimonial-details -->
+                        <!-- </div> -->
+                    <!-- </div> -->
+                    <!-- end of card -->
+
+                    <!-- Card -->
+                    <!-- <div class="card">
+                        <div class="card-body">
+                            <p class="testimonial-text">“Loved to work with Mark he's such an awesome developer with great attention to details. He also has a great eye for design”</p>
+                            <div class="details">
+                                <img src="images/testimonial-2.jpg" alt="alternative">
+                                <div class="text">
+                                    <div class="testimonial-author">John Rowling</div>
+                                    <div class="occupation">Marketing Manager - Nexlite</div>
+                                </div> end of text -->
+                            <!-- </div> end of testimonial-details -->
+                        <!-- </div> -->
+                    <!-- </div> -->
+                    <!-- end of card -->
+
+                    <!-- Card -->
+                    <!-- <div class="card">
+                        <div class="card-body">
+                            <p class="testimonial-text">“So glad we started working with Mark. We've used many times his design and development skills for our inhouse online projects”</p>
+                            <div class="details">
+                                <img src="images/testimonial-3.jpg" alt="alternative">
+                                <div class="text">
+                                    <div class="testimonial-author">Lana Smith</div>
+                                    <div class="occupation">General Manager - Shifter</div> -->
+                                <!-- </div> end of text -->
+                            <!-- </div> end of testimonial-details -->
+                        <!-- </div> -->
+                    <!-- </div> -->
+                    <!-- end of card -->
+
+                <!-- </div> end of col -->
+            <!-- </div> end of row -->
+        <!-- </div> end of container -->
+    <!-- </div> end of cards-1 -->
+    <!-- end of testimonials -->
+
+
+    <!-- Section Divider -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <hr class="section-divider">
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+    <!-- end of section divider -->
+
+
+    <!-- Questions -->
+    <!-- <div class="accordion-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="h2-heading">Frequent questions</h2> -->
+                <!-- </div> end of col -->
+            <!-- </div> end of row -->
+            <!-- <div class="row">
+                <div class="col-lg-12">
+
+                    <div class="accordion" id="accordionExample">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    How can I contact you and quickly get a quote for my online project?
+                                </button>
+                            </div>
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    The best way to reach me is through the contact form of by messaging me on my social media accounts. For a fast quote make sure your provide many project details
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Do you create designs from the ground up or you are using themes?
+                                </button>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    The best way to reach me is through the contact form of by messaging me on my social media accounts. For a fast quote make sure your provide many project details
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Will I receive any included maintenance or warranty after project delivery?
+                                </button>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    The best way to reach me is through the contact form of by messaging me on my social media accounts. For a fast quote make sure your provide many project details
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingFour">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    If something goes wrong with the project can I have my money back?
+                                </button>
+                            </div>
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    The best way to reach me is through the contact form of by messaging me on my social media accounts. For a fast quote make sure your provide many project details
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingFive">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    What's your preferred method of payment and do you need an advance?
+                                </button>
+                            </div>
+                            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    The best way to reach me is through the contact form of by messaging me on my social media accounts. For a fast quote make sure your provide many project details
+                                </div>
+                            </div>
+                        </div> -->
+                    <!-- </div> end of accordion -->
+
+                <!-- </div> end of col -->
+            <!-- </div> end of row -->
+        <!-- </div> end of container -->
+    <!-- </div> end of accordion-1 -->
+    <!-- end of questions -->
+
+
+    <!-- Contact -->
+    <!-- <div id="contact" class="form-1 bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Contact details</h2>
+                    <p class="p-heading">For any type of online project please don't hesitate to get in touch with me. The fastest way is to send me your message using the following email <a class="blue no-line" href="#your-link">contact@domain.com</a></p>
+                </div> 
+            </div> 
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="formContainer">
+                        <h1>Enter Credentials Here:</h1>
+                        <input type="email" placeholder="email here" id="email"><br>
+                        <input type="password" placeholder="password here" id="password"><br>
+                        <button onclick="signUp()" id="signUp">SignUp</button>
+                        <button onclick="signIn()" id="signIp">SignIn</button>
+                        <button onclick="signOut()" id="signOut">SignOut</button> -->
+                    
+                    
+                    <!-- Contact Form -->
+                    <!-- <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" class="form-control-input" id="cname" required>
+                            <label class="label-control" for="cname">Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control-input" id="email" required>
+                            <label class="label-control" for="cemail">Email</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control-input" id="password" required>
+                            <label class="label-control" for="password">Password</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="number" class="form-control-input" id="phone number" required>
+                            <label class="label-control" for="phone number">Phone Number</label>
+                        </div> -->
+                        <!-- <div class="form-group">
+                            <textarea class="form-control-textarea" id="cmessage" required></textarea>
+                            <label class="label-control" for="cmessage">Project details</label>
+                        </div> -->
+                        <!-- <div class="form-group">
+                            <button type="submit" class="form-control-submit-button">Submit</button>  
+                        </div>
+                    </form> -->
+                    <!-- end of contact form -->
+
+                <!-- </div> end of col -->
+            <!-- </div> end of row -->
+        <!-- </div> end of container -->
+    <!-- </div> end of form-1   -->
+    <!-- end of contact -->
+
+
+    <!-- Footer -->
+    <div class="footer bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="social-container">
+                        <span class="fa-stack">
+                            <a href="#your-link">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-facebook-f fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="#your-link">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-twitter fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <!-- <span class="fa-stack">
+                            <a href="#your-link">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-pinterest-p fa-stack-1x"></i>
+                            </a>
+                        </span> -->
+                        <span class="fa-stack">
+                            <a href="#your-link">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-instagram fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <!-- <span class="fa-stack">
+                            <a href="#your-link">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-youtube fa-stack-1x"></i>
+                            </a>
+                        </span> -->
+                    </div> <!-- end of social-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of footer -->  
+    <!-- end of footer -->
+
+
+    <!-- Copyright -->
+    <div class="copyright bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="p-small">Copyright © <a class="no-line" href="#your-link">Analytic School</a></p>
+                </div> <!-- end of col -->
+            </div> <!-- enf of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of copyright --> 
+    <!-- end of copyright -->
+    
+    	
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="js/scripts.js"></script> <!-- Custom scripts -->
+</body>
+</html>
